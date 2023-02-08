@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+'use strict'
+const app = require('../app');
+const config = require('../config/config.js');
+
+
+app.listen(config.port, () => {
+    console.log('API running in '+config.port);
+})
